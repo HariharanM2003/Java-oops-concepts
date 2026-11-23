@@ -1,0 +1,24 @@
+package oopsconcepts;
+
+
+class Animal{
+	void sound() {
+		System.out.print("animal is eating");
+	}
+}
+
+class Dog extends Animal{
+	void sound() {
+		System.out.println("dog barks");
+	}
+}
+
+public class methodoverriding {
+
+	public static void main(String[] args) {
+		Animal a=new Dog();
+		a.sound();
+
+	}
+
+}
