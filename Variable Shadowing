@@ -1,0 +1,27 @@
+package oopsconcepts;
+
+
+class employee{
+	void display() {
+		String name="hari";
+		System.out.println("employee:"+name);
+	}
+}
+
+class manager extends employee{
+	void display(){
+		String name="hari";
+		System.out.println("manager:"+name);
+		
+	}
+}
+
+public class variableshadowing {
+
+	public static void main(String[] args) {
+		employee m=new manager();
+		m.display();
+
+	}
+
+}
