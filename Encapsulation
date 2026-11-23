@@ -1,0 +1,32 @@
+package oopsconcepts;
+
+class Bankaccount{
+	private double balance;
+	
+	
+	public Bankaccount(double balance)
+	{
+		this.balance=balance;
+	}
+	public void deposit(double amount)
+	{
+		if(amount>0)
+		{
+			balance+=amount;
+		}
+	}
+	public double getbalance() {
+		return balance;
+	}
+}
+
+public class encapsulation {
+	public static void main(String[] args)
+	{
+		Bankaccount a=new Bankaccount(1000);
+		a.deposit(5000);
+		
+		System.out.println(a.getbalance());
+	}
+
+}
