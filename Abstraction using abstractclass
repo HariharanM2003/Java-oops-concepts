@@ -1,0 +1,27 @@
+package oopsconcepts;
+
+
+abstract class vehicle{
+	abstract void start();
+	
+	void stop() {
+		System.out.print("vehicle is stopped");
+	}
+}
+
+class car extends vehicle{
+	void start() {
+		System.out.println("car is started");
+	}
+}
+
+public class abstractionusingabstractclass {
+
+	public static void main(String[] args) {
+		vehicle a=new car();
+		a.start();
+		a.stop();
+
+	}
+
+}
