@@ -1,0 +1,30 @@
+package oopsconcepts;
+
+
+interface A{
+	void start();
+	void stop();
+	
+}
+
+class b implements A{
+	public void start() {
+		System.out.println("it is started");
+	}
+	
+	public void stop() {
+		System.out.println("it is stopped");
+	}
+}
+
+
+public class abstractionusinginterface {
+
+	public static void main(String[] args) {
+		A obj=new b();
+		obj.start();
+		obj.stop();
+
+	}
+
+}
