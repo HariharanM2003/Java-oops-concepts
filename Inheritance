@@ -1,0 +1,23 @@
+package oopsconcepts;
+
+interface parent{
+	void show();
+}
+
+interface child{
+	void show();
+}
+
+class c implements parent,child{
+	public void show(){
+		System.out.println("class C");
+		
+	}
+}
+public class inhertance {
+	public static void main(String[] args) {
+		c obj=new c();
+		obj.show();
+	}
+
+}
