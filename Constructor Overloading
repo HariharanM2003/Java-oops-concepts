@@ -1,0 +1,42 @@
+package oopsconcepts;
+
+class student{
+	int id;
+	String name;
+	int age;
+	student(){
+		id = 1;
+		name="null";
+		age=0;
+	}
+	
+	student(int id,String name){
+		this.id=id;
+		this.name=name;
+	}
+	
+	student(int id,String name,int age){
+		this.id=id;
+		this.name=name;
+		this.age=age;
+	}
+	
+	void display() {
+		System.out.println(id+" "+name+" "+age);
+	}
+}
+
+public class constructoroverloading {
+
+	public static void main(String[] args) {
+		student s1=new student();
+		student s2=new student(1,"hari");
+		student s3=new student(2,"hari",23);
+		
+		s1.display();
+		s2.display();
+		s3.display();
+
+	}
+
+}
